@@ -9,7 +9,6 @@
 body {
     background-color: var(--colore-base);
     margin: 0;
-    text-shadow: 2px 2px 5px var(--colore-base);
 
 }
 
@@ -101,6 +100,7 @@ h1 {
     font-size: 56px;
     line-height: 68px;
     font-weight: 500;
+    text-shadow: 2px 2px 5px var(--colore-base);
 }
 
 h2 {
@@ -309,7 +309,7 @@ hr {
 
 .modale p {
     max-width: 600px;
-    margin: 0;
+    margin: 40px;
 }
 
 .modale .bio {
@@ -322,6 +322,22 @@ hr {
     min-height: 150px;
     margin: 40px auto;
     gap: 20px;
+}
+
+.close {
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 b {

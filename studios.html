@@ -76,7 +76,7 @@
 
 
     <section class="modale" id="mdlpixar">
-
+        <span class="close">&times;</span>
         <div class="sub">
             <hr>
 
@@ -152,6 +152,7 @@
     </section>
 
     <section class="modale" id="mdldisney">
+        <span class="close">&times;</span>
 
         <div class="sub">
             <hr>
@@ -213,6 +214,7 @@
     </section>
 
     <section class="modale" id="mdlnetflix">
+        <span class="close">&times;</span>
 
         <div class="sub">
             <hr>
@@ -272,6 +274,7 @@
     </section>
 
     <section class="modale" id="mdldreamworks">
+        <span class="close">&times;</span>
 
         <div class="sub">
             <hr>
@@ -331,6 +334,7 @@
     </section>
 
     <section class="modale" id="mdlsony">
+        <span class="close">&times;</span>
 
         <div class="sub">
             <hr>
@@ -388,6 +392,7 @@
     </section>
 
     <section class="modale" id="mdlghibli">
+        <span class="close">&times;</span>
 
         <div class="sub">
             <hr>
@@ -446,6 +451,7 @@
     </section>
 
     <section class="modale" id="mdlaardman">
+        <span class="close">&times;</span>
 
         <div class="sub">
             <hr>
@@ -523,6 +529,17 @@
         }
     });
 
+    const bottoniChiudi = document.querySelectorAll('.close');
+
+    bottoniChiudi.forEach(btn => {
+        btn.addEventListener('click', function () {
+            const modale = this.closest('.modale');
+            if (modale) {
+                modale.style.display = 'none';
+            }
+        });
+    })
+    
 </script>
 
 </html>
