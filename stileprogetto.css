@@ -107,13 +107,14 @@ h4 {
     font-size: 18pt;
 }
 
-.info h4{
+.info h4 {
     font-weight: 200;
     color: var(--colore-secondario);
     text-decoration: underline;
     font-size: 18px;
     text-align: center;
 }
+
 
 .navigazione {
     margin: 40px auto;
@@ -365,7 +366,7 @@ hr {
 }
 
 .dettaglio img {
-    max-width: 250px;
+    max-width: 400px;
     object-fit: contain;
     margin: 40px auto;
 }
@@ -385,9 +386,8 @@ hr {
     display: flex;
     max-width: 600px;
     min-height: 150px;
-    margin: 40px auto;
+    margin: 40px ;
     gap: 20px;
-    align-self: center;
     padding: 0 10px;
 }
 
@@ -432,9 +432,8 @@ p.minore {
     text-align: center;
 }
 
-.trama,
-.ilresto {
-    flex: 1;
+.trama {
+    width: 70% ;
 }
 
 .ilresto {
@@ -453,7 +452,7 @@ div.sub {
     margin: 60px auto;
 }
 
-.subfilm{
+.subfilm {
     display: flex;
     gap: 20px;
     align-items: baseline;
@@ -580,9 +579,9 @@ div.sub {
     }
 
     .dettaglio img {
-    max-height: 250px;
-    object-fit: contain;
-    margin: 40px auto;
-}
+        max-height: 350px;
+        object-fit: contain;
+        margin: 40px auto;
+    }
 
 }
